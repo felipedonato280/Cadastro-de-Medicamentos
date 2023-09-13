@@ -1,32 +1,41 @@
-<!-- viewEditarMedicamento.ejs -->
+<main class="d-flex form-signin justify-content-center align-items-center" style="height: 100vh;">
+    <div class="p-5 bg-body-tertiary" style="border-radius: 20px; min-width: 40vw;">
+        <form method="post" action="/editar-medicamento/<%= medicamento._id %>" enctype="multipart/form-data">
+            <div class="text-center">
 
-<main>
-    <h1>Editar Medicamento</h1>
-    
-    <form method="post" action="/editar-medicamento/<%= medicamento._id %>" enctype="multipart/form-data">
-        <div>
-            <label for="nome">Nome do Medicamento:</label>
-            <input type="text" name="nome" value="<%= medicamento.nome %>" required>
-        </div>
-        <div>
-            <label for="descricao">Descrição:</label>
-            <textarea name="descricao" rows="4" required><%= medicamento.descricao %></textarea>
-        </div>
-        <div>
-            <label for="indicacao">Indicação:</label>
-            <input type="text" name="indicacao" value="<%= medicamento.indicacao %>" required>
-        </div>
-        <div>
-            <label for="modo_usar">Modo de Usar:</label>
-            <textarea name="modo_usar" rows="4" required><%= medicamento.modo_usar %></textarea>
-        </div>
-        <div>
-            <label for="efeitos_colaterais">Efeitos Colaterais:</label>
-            <textarea name="efeitos_colaterais" rows="4" required><%= medicamento.efeitos_colaterais %></textarea>
-        </div>
-        
-        <div>
-            <button type="submit">Salvar Alterações</button>
-        </div>
-    </form>
+                <div class="my-3 fw-normal">
+                    <h2>Editar medicamento</h1>
+                </div>
+
+                <div class="my-3">
+                    <label for="nome">Nome do Medicamento:</label>
+                    <input class="form-control" placeholder="exemplo" aria-label="exemplo" type="text" name="nome" value="<%= medicamento.nome %>" required>
+                </div>
+
+                <div class="my-3">
+                    <label for="descricao">Descrição:</label>
+                    <input class="form-control" placeholder="exemplo" aria-label="exemplo" name="descricao" rows="4" value="<%= medicamento.descricao %>" required></input>
+                </div class="my-3">
+
+                <div class="my-3">
+                    <label for="indicacao">Indicação:</label>
+                    <input class="form-control" placeholder="exemplo" aria-label="exemplo" type="text" name="indicacao" value="<%= medicamento.indicacao %>" required>
+                </div>
+
+                <div class="my-3">
+                    <label for="modo_usar">Modo de Usar:</label>
+                    <input class="form-control" placeholder="exemplo" aria-label="exemplo" name="modo_usar" rows="4" value="<%= medicamento.modo_usar %>" required></input>
+                </div>
+
+                <div class="my-3">
+                    <label for="efeitos_colaterais">Efeitos Colaterais:</label>
+                    <input class="form-control" placeholder="exemplo" aria-label="exemplo" name="efeitos_colaterais" rows="4" value="<%= medicamento.efeitos_colaterais %>" required></input>
+                </div>
+                
+                <div>
+                    <button class="btn btn-primary" type="submit">Salvar Alterações</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </main>
