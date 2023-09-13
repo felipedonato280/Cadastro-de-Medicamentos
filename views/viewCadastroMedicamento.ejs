@@ -1,0 +1,30 @@
+<main>
+    <h1>Cadastrar Medicamento</h1>
+    
+    <form method="post" action="/cadastrar-medicamento">
+        <div>
+            <label for="nome">Nome do Medicamento:</label>
+            <input type="text" name="nome" required>
+        </div>
+        <div>
+            <label for="descricao">Descrição:</label>
+            <textarea name="descricao" rows="4" required></textarea>
+        </div>
+        <div>
+            <label for="indicacao">Indicação:</label>
+            <input type="text" name="indicacao" required>
+        </div>
+        <div>
+            <label for="modo_usar">Modo de Usar:</label>
+            <textarea name="modo_usar" rows="4" required></textarea>
+        </div>
+        <div>
+            <label for="efeitos_colaterais">Efeitos Colaterais:</label>
+            <textarea name="efeitos_colaterais" rows="4" required></textarea>
+        </div>
+        
+        <div>
+            <button type="submit">Cadastrar Medicamento</button>
+        </div>
+    </form>
+</main>

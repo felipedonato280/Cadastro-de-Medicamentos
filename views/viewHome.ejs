@@ -1,0 +1,19 @@
+<main>
+    <h1>Bem-vindo à Página Home</h1>
+
+    <h2>Medicamentos Cadastrados</h2>
+    <ul>
+        <% medicamentos.forEach((medicamento) => { %>
+            <li>
+                <strong>Nome:</strong> <%= medicamento.nome %><br>
+                <strong>Descrição:</strong> <%= medicamento.descricao %><br>
+                <strong>Indicação:</strong> <%= medicamento.indicacao %><br>
+                <strong>Modo de Usar:</strong> <%= medicamento.modo_usar %><br>
+                <strong>Efeitos Colaterais:</strong> <%= medicamento.efeitos_colaterais %><br>
+                <!-- Você pode adicionar mais campos, se necessário -->
+            </li>
+        <% }); %>
+    </ul>
+
+    <a href="/cadastrar-medicamento">Cadastrar Medicamento</a>
+</main>

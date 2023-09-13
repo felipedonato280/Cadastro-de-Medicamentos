@@ -1,0 +1,33 @@
+<main class="d-flex form-signin justify-content-center align-items-center" style="height: 100vh;">
+    <div class="p-5 bg-body-tertiary" style="border-radius: 20px;">
+        <form method="post" action="/login">
+            <div class="text-center">
+    
+                <div class="my-3 fw-normal">
+                    <h2>Entre agora!</h1>
+                </div>
+
+                <div class="my-3">
+                    <label for="username">Nome de Usuário: </label>
+                    <input class="form-control" placeholder="Jeferson" aria-label="Jeferson" type="text" name="username" />
+                </div>
+
+                <div class="my-3">
+                    <label for="password">Senha: </label>
+                    <input class="form-control" placeholder="12345678" aria-label="12345678" type="password" name="password" />
+                </div>
+
+                <div class="my-3">
+                    <p>Não possui uma conta?<a href="/cadastro" style="text-decoration: none;"> cadastre agora!</a></p>
+                </div>
+        
+                <div class="my-3">
+                    <a href="/home">
+                        <button type="submit" class="btn btn-primary w-100 py-2">Entrar</button>
+                    </a>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</main>
