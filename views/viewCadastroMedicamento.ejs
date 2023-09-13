@@ -1,30 +1,41 @@
-<main>
-    <h1>Cadastrar Medicamento</h1>
-    
-    <form method="post" action="/cadastrar-medicamento">
-        <div>
-            <label for="nome">Nome do Medicamento:</label>
-            <input type="text" name="nome" required>
-        </div>
-        <div>
-            <label for="descricao">Descrição:</label>
-            <textarea name="descricao" rows="4" required></textarea>
-        </div>
-        <div>
-            <label for="indicacao">Indicação:</label>
-            <input type="text" name="indicacao" required>
-        </div>
-        <div>
-            <label for="modo_usar">Modo de Usar:</label>
-            <textarea name="modo_usar" rows="4" required></textarea>
-        </div>
-        <div>
-            <label for="efeitos_colaterais">Efeitos Colaterais:</label>
-            <textarea name="efeitos_colaterais" rows="4" required></textarea>
-        </div>
-        
-        <div>
-            <button type="submit">Cadastrar Medicamento</button>
-        </div>
-    </form>
+<main class="d-flex form-signin justify-content-center align-items-center" style="height: 100vh;">
+    <div class="p-5 bg-body-tertiary" style="border-radius: 20px; min-width: 40vw;">
+        <form method="post" action="/cadastrar-medicamento">
+            <div class="text-center">
+
+                <div class="my-3 fw-normal">
+                    <h2>Cadastre ja!</h1>
+                </div>
+                
+                <div class="my-3">
+                    <label for="nome">Nome do Medicamento:</label>
+                    <input class="form-control" placeholder="exemplo" aria-label="exemplo" type="text" name="nome" required>
+                </div>
+
+                <div class="my-3">
+                    <label for="descricao">Descrição:</label>
+                    <input class="form-control" placeholder="para dor" aria-label="para dor" name="descricao" rows="4" required></input>
+                </div>
+
+                <div class="my-3">
+                    <label for="indicacao">Indicação:</label>
+                    <input class="form-control" placeholder="exemplo" aria-label="exemplo" type="text" name="indicacao" required>
+                </div>
+
+                <div class="my-3">
+                    <label for="modo_usar">Modo de Usar:</label>
+                    <input class="form-control" placeholder="12 em 12 horas" aria-label="12 em 12 horas" name="modo_usar" rows="4" required></input>
+                </div>
+
+                <div class="my-3">
+                    <label for="efeitos_colaterais">Efeitos Colaterais:</label>
+                    <input class="form-control" placeholder="nada" aria-label="nada" name="efeitos_colaterais" rows="4" required></input>
+                </div>
+                
+                <div>
+                    <button class="btn btn-primary" type="submit">Cadastrar Medicamento</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </main>

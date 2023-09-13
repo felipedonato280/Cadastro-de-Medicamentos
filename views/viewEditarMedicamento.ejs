@@ -1,0 +1,32 @@
+<!-- viewEditarMedicamento.ejs -->
+
+<main>
+    <h1>Editar Medicamento</h1>
+    
+    <form method="post" action="/editar-medicamento/<%= medicamento._id %>" enctype="multipart/form-data">
+        <div>
+            <label for="nome">Nome do Medicamento:</label>
+            <input type="text" name="nome" value="<%= medicamento.nome %>" required>
+        </div>
+        <div>
+            <label for="descricao">Descrição:</label>
+            <textarea name="descricao" rows="4" required><%= medicamento.descricao %></textarea>
+        </div>
+        <div>
+            <label for="indicacao">Indicação:</label>
+            <input type="text" name="indicacao" value="<%= medicamento.indicacao %>" required>
+        </div>
+        <div>
+            <label for="modo_usar">Modo de Usar:</label>
+            <textarea name="modo_usar" rows="4" required><%= medicamento.modo_usar %></textarea>
+        </div>
+        <div>
+            <label for="efeitos_colaterais">Efeitos Colaterais:</label>
+            <textarea name="efeitos_colaterais" rows="4" required><%= medicamento.efeitos_colaterais %></textarea>
+        </div>
+        
+        <div>
+            <button type="submit">Salvar Alterações</button>
+        </div>
+    </form>
+</main>
